@@ -1,0 +1,46 @@
+/*
+ *= require jsoneditor/jsoneditor
+ */
+
+.jsoneditor-wrap textarea {
+		display: none;
+}
+
+.jsoneditor table {
+		width: auto;
+		margin-bottom: auto;
+}
+
+
+.jsoneditor {
+		background-color: white;
+		width: auto;
+    height: 300px;
+		border-color: rgb(201, 208, 214);
+		border-radius: 3px;
+		border-width: 1px;
+
+}
+
+.jsoneditor .menu {
+		background-image: -webkit-linear-gradient(top, rgb(253, 253, 253), rgb(244, 244, 244));
+		border-bottom-color: rgb(201, 208, 214);
+}
+
+.jsoneditor .menu a {
+		  color: rgb(201, 208, 214);
+}
+
+.jsoneditor .menu button {
+		border-color: rgb(201, 208, 214);
+		background-color: white;
+		color: white;
+}
+
+.jsoneditor .menu button:disabled {
+  background-color: #f4f4f4;
+}
+
+.jsoneditor .search .frame {
+		border-color: rgb(201, 208, 214);
+}

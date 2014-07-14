@@ -1,0 +1,15 @@
+PATH
+  remote: .
+  specs:
+    activeadmin_hstore_editor (0.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activeadmin_hstore_editor!
+  bundler (~> 1.5)
