@@ -3,38 +3,37 @@
  */
 
 .jsoneditor-wrap textarea {
-		display: none;
+  display: none;
 }
 
 .jsoneditor table {
-		width: auto;
-		margin-bottom: auto;
+  width: auto;
+  margin-bottom: auto;
 }
 
 
 .jsoneditor {
-		background-color: white;
-		width: auto;
-    height: 300px;
-		border-color: rgb(201, 208, 214);
-		border-radius: 3px;
-		border-width: 1px;
-
+  background-color: white;
+  width: auto;
+  height: 300px;
+  border-color: rgb(201, 208, 214);
+  border-radius: 3px;
+  border-width: 1px;
 }
 
 .jsoneditor .menu {
-		background-image: -webkit-linear-gradient(top, rgb(253, 253, 253), rgb(244, 244, 244));
-		border-bottom-color: rgb(201, 208, 214);
+  background-image: -webkit-linear-gradient(top, rgb(253, 253, 253), rgb(244, 244, 244));
+  border-bottom-color: rgb(201, 208, 214);
 }
 
 .jsoneditor .menu a {
-		  color: rgb(201, 208, 214);
+  color: rgb(201, 208, 214);
 }
 
 .jsoneditor .menu button {
-		border-color: rgb(201, 208, 214);
-		background-color: white;
-		color: white;
+  border-color: rgb(201, 208, 214);
+  background-color: white;
+  color: white;
 }
 
 .jsoneditor .menu button:disabled {
@@ -42,5 +41,5 @@
 }
 
 .jsoneditor .search .frame {
-		border-color: rgb(201, 208, 214);
+  border-color: rgb(201, 208, 214);
 }
