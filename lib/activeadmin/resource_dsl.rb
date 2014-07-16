@@ -8,7 +8,6 @@ module ActiveAdmin
         object.class.columns_hash.select {|key,attr| attr.type == :hstore}.keys.each do |key|
           object.attributes = {key => JSON.parse(params[object.class.name.underscore][key])} if params[object.class.name.underscore].key? key
         end
-        Rails.logger.error [resource, object.inspect, params]
       end
     end
   end
