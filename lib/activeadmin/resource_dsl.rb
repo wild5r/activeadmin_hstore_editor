@@ -8,7 +8,15 @@ module ActiveAdmin
         request_namespace = object.class.name.underscore
         if params.key? request_namespace
           object.class.columns_hash.select {|key,attr| attr.type == :hstore}.keys.each do |key|
-            object.attributes = {key => JSON.parse(params[request_namespace][key])} if params[request_namespace].key? key
+            if params[request_namespace].key? key
+              json_data = params[request_namespace][key]
+              data = if json_data == 'null' or json_data.blank?
+                {}
+              else
+                JSON.parse(json_data)
+              end
+              object.attributes = {key => data}
+            end
           end
         else
           raise ActionController::ParameterMissing, request_namespace

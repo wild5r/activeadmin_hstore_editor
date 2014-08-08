@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activeadmin_hstore_editor (0.0.1)
+    activeadmin_hstore_editor (0.0.2)
       railties (>= 3.0, < 5.0)
 
 GEM
