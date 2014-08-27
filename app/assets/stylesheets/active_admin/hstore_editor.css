@@ -1,5 +1,6 @@
 /*
  *= require jsoneditor/jsoneditor
+ *= depend_on_asset "jsoneditor/img/jsoneditor-icons.png"
  */
 
 .jsoneditor-wrap textarea {
