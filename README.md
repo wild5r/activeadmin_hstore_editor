@@ -17,6 +17,14 @@ Or install it yourself as:
 
     $ gem install activeadmin_hstore_editor
 
+Include styles in "active_admin.css.scss"
+
+    *= require active_admin/hstore_editor
+
+Include javascripts in "active_admin.js"
+
+    //= require active_admin/hstore_editor
+
 ## Usage
 
 This Gem provides you formtastic input called :hstore to edit hstore data and parse form data for store it
