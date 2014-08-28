@@ -5,7 +5,7 @@ module ActiveAdmin
   class ResourceDSL
     def hstore_editor
       before_save do |object,args|
-        request_namespace = object.class.name.underscore
+        request_namespace = object.class.name.underscore.gsub('/', '_')
         if params.key? request_namespace
           object.class.columns_hash.select {|key,attr| attr.type == :hstore}.keys.each do |key|
             if params[request_namespace].key? key
