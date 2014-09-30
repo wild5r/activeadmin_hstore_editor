@@ -4,7 +4,7 @@
 ;(function(window, $) {
   $(function() {
     /*  multipart/form-data*/
-    $('form').attr('enctype', 'application/json');
+    $('form').attr('enctype', 'multipart/form-data');
 
     $('div.jsoneditor-wrap').each(function(i,wrap){
       var container = $(wrap)[0];
@@ -18,5 +18,5 @@
       };
       editor = new JSONEditor(container, options,JSON.parse(textarea.val()));
     });
-  })
-})(window, jQuery)
+  });
+})(window, jQuery);
