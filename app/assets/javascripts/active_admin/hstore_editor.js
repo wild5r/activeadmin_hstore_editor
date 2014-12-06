@@ -3,9 +3,6 @@
 
 ;(function(window, $) {
   $(function() {
-    /*  multipart/form-data*/
-    $('form').attr('enctype', 'multipart/form-data');
-
     $('div.jsoneditor-wrap').each(function(i,wrap){
       var container = $(wrap)[0];
       var textarea = $($(wrap).find('textarea'));
