@@ -17,13 +17,13 @@ Or install it yourself as:
 
     $ gem install activeadmin_hstore_editor
 
-Include styles in "active_admin.css.scss"
+Include styles in "active_admin" initializer
 
-    *= require active_admin/hstore_editor
+    config.register_stylesheet 'active_admin/hstore_editor.css'
 
-Include javascripts in "active_admin.js"
+Include javascripts in "active_admin" initializer
 
-    //= require active_admin/hstore_editor
+    config.register_javascript 'active_admin/hstore_editor.js'
 
 ## Usage
 
