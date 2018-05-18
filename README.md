@@ -32,12 +32,12 @@ This Gem provides you formtastic input called :hstore to edit hstore data and pa
 
 ```ruby
 ActiveAdmin.register User do
-	permit_params :settings
+  permit_params :settings
 
-	hstore_editor
+  hstore_editor
 
   # specify the type does not necessarily
-	form do |f|
+  form do |f|
     f.inputs do
       f.input :settings, as: :hstore
     end
